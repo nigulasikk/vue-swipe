@@ -53,7 +53,12 @@
     <div class="swipe-indicators" v-show="showIndicators">
       <div class="swipe-indicator" v-for="page in pages" :class="{ active: $index === index }"></div>
     </div>
+    <div>
+      <div class="pre-style" @click="prev"></div>
+      <div class="next-style" @click="next"></div>
+    </div>
   </div>
+
 </template>
 
 <script type="text/ecmascript-6">
